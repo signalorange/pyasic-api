@@ -1,0 +1,13 @@
+services:
+  pyasic-api:
+    build: .
+    container_name: pyasic-api
+    ports:
+      - "9000:9000"
+    networks:
+      - miner_network
+    restart: unless-stopped
+
+networks:
+  miner_network:
+    driver: bridge
