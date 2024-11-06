@@ -10,6 +10,11 @@ A RESTful API wrapper for pyasic that provides easy access to ASIC miner informa
 - Check miner error states
 - Async implementation for efficient performance
 
+## Todo
+
+- [x] Add support for the control [endpoints](https://github.com/UpstreamData/pyasic?tab=readme-ov-file#miner-control)
+- [ ] Add support for the [settings](https://github.com/UpstreamData/pyasic?tab=readme-ov-file#settings) as ENV 
+
 ## API Endpoints
 
 ### GET /miners
@@ -31,6 +36,16 @@ Fetches configuration details for a specific miner.
 Gets error information from a specific miner.
 - Path parameter: `ip` (miner's IP address)
 - Returns: Object containing miner errors
+
+### Turn on fault light
+`curl -X POST http://localhost:9000/miner/192.168.1.100/fault-light/on`
+
+### Reboot miner
+`curl -X POST http://localhost:9000/miner/192.168.1.100/reboot`
+
+### Set power limit
+`curl -X POST -H "Content-Type: application/json" -d '{"limit": 1400}' http://localhost:9000/miner/192.168.1.100/power-limit`
+
 
 ## Installation
 

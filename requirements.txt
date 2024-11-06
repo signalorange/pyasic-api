@@ -1,3 +1,5 @@
 fastapi
-pyasic
+pyasic=0.62.2
 uvicorn
+python-dotenv
+pyyaml
