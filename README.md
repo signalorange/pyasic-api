@@ -69,14 +69,7 @@ Get specific miner data:
    `docker run -d -p 9000:9000 pyasic-api`
 
 ## Pre-built Docker Image
-You can directly use the pre-built Docker image available on Docker Hub: signalorange/pyasic-api.
-
-## Requirements
-
-Python 3.7+
-FastAPI
-uvicorn
-pyasic
+You can directly use the pre-built Docker image available on Docker Hub: `signalorange/pyasic-api`.
 
 ## Contributing
 
