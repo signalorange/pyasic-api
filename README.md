@@ -35,15 +35,15 @@ Gets error information from a specific miner.
 ## Installation
 
 1. Clone the repository:
-``git clone https://github.com/yourusername/pyasic-api.git```
+`git clone https://github.com/yourusername/pyasic-api.git`
 
 2. Install dependencies:
-```pip install fastapi uvicorn pyasic`
+`pip install fastapi uvicorn pyasic`
 
 ## Usage
 
 Start the API server:
-``python app.py`
+`python app.py`
 
 The API will be available at http://localhost:9000
 
