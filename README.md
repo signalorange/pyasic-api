@@ -81,5 +81,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-Built with pyasic
-Powered by FastAPI
+- Built with [pyasic](https://github.com/UpstreamData/pyasic)
+- Powered by [FastAPI](https://github.com/FastAPI/FastAPI)
