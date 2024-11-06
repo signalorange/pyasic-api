@@ -1,5 +1,5 @@
 fastapi
-pyasic=0.62.2
+pyasic==0.62.2
 uvicorn
 python-dotenv
 pyyaml
