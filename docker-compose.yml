@@ -4,6 +4,7 @@ services:
     container_name: pyasic-api
     ports:
       - "9000:9000"
+      - "6379:6379"
     networks:
       - miner_network
     restart: unless-stopped
@@ -28,6 +29,8 @@ services:
       - ANTMINER_SSH_PASSWORD=miner
       - BOSMINER_SSH_PASSWORD=root
       - SOCKET_LINGER_TIME=1000
+      - SCAN_SUBNETS=10.66.10.0/24,192.168.1.0/24,10.0.0.0/24
+      - SCAN_INTERVAL=300
 
 networks:
   miner_network:

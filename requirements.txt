@@ -1,5 +1,7 @@
 fastapi
 pyasic==0.62.2
 uvicorn
-python-dotenv
 pyyaml
+redis 
+fastapi-utils
+setuptools

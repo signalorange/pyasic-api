@@ -1,0 +1,3667 @@
+[
+  {
+    "ip": "10.66.10.33",
+    "datetime": "2024-11-06T19:10:09.635579+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "FA:D9:92:30:C1:8B",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 41.09614,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 78,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.55065,
+          "unit": 1000000000000
+        },
+        "temp": 74,
+        "chip_temp": 54,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 14.02802,
+          "unit": 1000000000000
+        },
+        "temp": 80,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 13.51747,
+          "unit": 1000000000000
+        },
+        "temp": 80,
+        "chip_temp": 54,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "CC7N3Q"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10391,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 317,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 777,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.37",
+    "datetime": "2024-11-06T19:10:09.635994+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": null,
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 27.65901,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 89,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 80,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.18736,
+          "unit": 1000000000000
+        },
+        "temp": 80,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 13.397219999999999,
+          "unit": 1000000000000
+        },
+        "temp": 78,
+        "chip_temp": 54,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 1.07443,
+          "unit": 1000000000000
+        },
+        "temp": 81,
+        "chip_temp": 51,
+        "chips": 20,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 80,
+    "nominal": false,
+    "config": null,
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 9235,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "btc.global.luxor.tech",
+          "port": 700,
+          "pubkey": null
+        },
+        "accepted": 536,
+        "rejected": 3,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "DCentralTech",
+        "pool_rejected_percent": 0.5565862708719851,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 565,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.53",
+    "datetime": "2024-11-06T19:10:09.636045+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "86:81:1c:54:d0:78",
+    "api_ver": "3.7",
+    "fw_ver": "23.01",
+    "hostname": "miner-54d078",
+    "hashrate": {
+      "rate": 38.475350799116725,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 39.599999999999994,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": 97,
+    "percent_expected_wattage": 101,
+    "temperature_avg": 56,
+    "env_temp": null,
+    "wattage": 1776,
+    "wattage_limit": 1750,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 5880
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 12.95215978641023,
+          "unit": 1000000000000
+        },
+        "temp": 56,
+        "chip_temp": 86,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 12.728096479928485,
+          "unit": 1000000000000
+        },
+        "temp": 58,
+        "chip_temp": 88,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 12.795094532778009,
+          "unit": 1000000000000
+        },
+        "temp": 54,
+        "chip_temp": 85,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": null,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 4,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": null
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 8977,
+    "efficiency": 46,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 318,
+        "rejected": 1,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0.3134796238244514,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.58",
+    "datetime": "2024-11-06T19:10:09.636228+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": null,
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": null,
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": null,
+    "api_ver": null,
+    "fw_ver": null,
+    "hostname": null,
+    "hashrate": null,
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 0,
+    "expected_fans": 2,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": null,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": []
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": null,
+    "efficiency": null,
+    "pools": []
+  },
+  {
+    "ip": "10.66.10.66",
+    "datetime": "2024-11-06T19:10:09.636391+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "98:63:31:63:ce:01",
+    "api_ver": "3.7",
+    "fw_ver": "23.01",
+    "hostname": "miner-63ce01",
+    "hashrate": {
+      "rate": 0.00591406797565521,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 3.0300000000000002,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 67,
+    "percent_expected_hashrate": 0,
+    "percent_expected_wattage": 13,
+    "temperature_avg": 40,
+    "env_temp": null,
+    "wattage": 221,
+    "wattage_limit": 1700,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 1980
+      },
+      {
+        "speed": 2160
+      },
+      {
+        "speed": 1560
+      },
+      {
+        "speed": 1440
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 0.0005685381526935547,
+          "unit": 1000000000000
+        },
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 0.005078630741179716,
+          "unit": 1000000000000
+        },
+        "temp": 40,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 0.0002668990817819394,
+          "unit": 1000000000000
+        },
+        "temp": 39,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 60,
+    "nominal": false,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": null,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": false,
+    "errors": [
+      {
+        "error_message": "Slot 0 running with fixed settings",
+        "error_code": 0
+      }
+    ],
+    "is_mining": true,
+    "uptime": 7888,
+    "efficiency": 37369,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 1,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.73",
+    "datetime": "2024-11-06T19:10:09.636422+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "F6:A8:27:E3:5D:BE",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 42.79488,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 79,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 14.15991,
+          "unit": 1000000000000
+        },
+        "temp": 75,
+        "chip_temp": 51,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 14.229959999999998,
+          "unit": 1000000000000
+        },
+        "temp": 85,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 14.40501,
+          "unit": 1000000000000
+        },
+        "temp": 78,
+        "chip_temp": 52,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "DJJKW5"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10366,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 364,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 866,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.77",
+    "datetime": "2024-11-06T19:10:09.636448+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "52:74:5D:C4:B1:AB",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 13.34898,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 99,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 93,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.34898,
+          "unit": 1000000000000
+        },
+        "temp": 89,
+        "chip_temp": 60,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 94,
+        "chip_temp": 63,
+        "chips": 29,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": 95,
+        "chip_temp": 63,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 89,
+    "nominal": false,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "S7CO1N"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10367,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 118,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 284,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.91",
+    "datetime": "2024-11-06T19:10:09.636479+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T19",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T19",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "FA:14:EF:68:D3:C9",
+    "api_ver": "3.7",
+    "fw_ver": "24.09",
+    "hostname": "miner-68d3c9",
+    "hashrate": {
+      "rate": 65.2017305342646,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 84,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 228,
+    "expected_fans": 4,
+    "percent_expected_chips": 67,
+    "percent_expected_hashrate": 78,
+    "percent_expected_wattage": null,
+    "temperature_avg": 55,
+    "env_temp": null,
+    "wattage": 2296,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5640
+      },
+      {
+        "speed": 5640
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 5340
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": 36.5,
+        "chip_temp": 51.5,
+        "chips": null,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 30.3198480883778,
+          "unit": 1000000000000
+        },
+        "temp": 65,
+        "chip_temp": 80,
+        "chips": 76,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 34.8818824458868,
+          "unit": 1000000000000
+        },
+        "temp": 63.5,
+        "chip_temp": 78.5,
+        "chips": 76,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 152,
+    "nominal": false,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": 1,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10597,
+    "efficiency": 35,
+    "pools": [
+      {
+        "url": "stratum+tcp://mine.ocean.xyz:3334",
+        "accepted": 607,
+        "rejected": 1,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0.1644736842105263,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.92",
+    "datetime": "2024-11-06T19:10:09.636545+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": null,
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": null,
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": null,
+    "api_ver": null,
+    "fw_ver": null,
+    "hostname": null,
+    "hashrate": null,
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 0,
+    "expected_fans": 2,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": null,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": []
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": null,
+    "efficiency": null,
+    "pools": []
+  },
+  {
+    "ip": "10.66.10.94",
+    "datetime": "2024-11-06T19:10:09.636572+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "0C:B5:C0:0C:EB:8A",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 25.72858,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 85,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5040
+      },
+      {
+        "speed": 5160
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.04833,
+          "unit": 1000000000000
+        },
+        "temp": 84,
+        "chip_temp": 52,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 89,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 12.68025,
+          "unit": 1000000000000
+        },
+        "temp": 81,
+        "chip_temp": 51,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "TSDPQY"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10403,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 221,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 513,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.106",
+    "datetime": "2024-11-06T19:10:09.636594+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": null,
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": null,
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": null,
+    "api_ver": null,
+    "fw_ver": null,
+    "hostname": null,
+    "hashrate": null,
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 0,
+    "expected_fans": 2,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": null,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": []
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": null,
+    "efficiency": null,
+    "pools": []
+  },
+  {
+    "ip": "10.66.10.108",
+    "datetime": "2024-11-06T19:10:09.636616+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "3E:99:59:78:E2:E2",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 27.02777,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 85,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.96854,
+          "unit": 1000000000000
+        },
+        "temp": 82,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 90,
+        "chip_temp": 58,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 13.05923,
+          "unit": 1000000000000
+        },
+        "temp": 82,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "8G2TOR"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 9404,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 209,
+        "rejected": 1,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0.4761904761904762,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 481,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.118",
+    "datetime": "2024-11-06T19:10:09.636640+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "9C:47:DA:74:6C:D3",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 42.38176,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 84,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 14.08802,
+          "unit": 1000000000000
+        },
+        "temp": 86,
+        "chip_temp": 53,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 14.12267,
+          "unit": 1000000000000
+        },
+        "temp": 86,
+        "chip_temp": 58,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 14.17107,
+          "unit": 1000000000000
+        },
+        "temp": 79,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "null",
+                "user": "null",
+                "password": "null"
+              },
+              {
+                "url": "null",
+                "user": "null",
+                "password": "null"
+              }
+            ],
+            "quota": 1,
+            "name": "4CHDH9"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10395,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 359,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "null",
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "null",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "null",
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "null",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 430,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.129",
+    "datetime": "2024-11-06T19:10:09.636663+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "8c:da:88:87:24:c6",
+    "api_ver": "3.7",
+    "fw_ver": "23.01",
+    "hostname": "miner-8724c6",
+    "hashrate": null,
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": null,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      },
+      {
+        "speed": null
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": null,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 4,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": true,
+    "uptime": null,
+    "efficiency": null,
+    "pools": []
+  },
+  {
+    "ip": "10.66.10.135",
+    "datetime": "2024-11-06T19:10:09.636695+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "S19",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "S19",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "5A:0C:74:DC:8A:5D",
+    "api_ver": "3.7",
+    "fw_ver": "24.09",
+    "hostname": "Antminer",
+    "hashrate": {
+      "rate": 114.17131435020201,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 95,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 228,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": 120,
+    "percent_expected_wattage": null,
+    "temperature_avg": 62,
+    "env_temp": null,
+    "wattage": 3493,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5100
+      },
+      {
+        "speed": 5100
+      },
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 5820
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 35.96732821804241,
+          "unit": 1000000000000
+        },
+        "temp": 61.5,
+        "chip_temp": 76.5,
+        "chips": 76,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 38.827300419512774,
+          "unit": 1000000000000
+        },
+        "temp": 63,
+        "chip_temp": 78,
+        "chips": 76,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 39.37668571264683,
+          "unit": 1000000000000
+        },
+        "temp": 61.5,
+        "chip_temp": 76.5,
+        "chips": 76,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 228,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [],
+            "quota": 1,
+            "name": "BU52GT"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10597,
+    "efficiency": 31,
+    "pools": [
+      {
+        "url": "stratum+tcp://mine.ocean.xyz:3334",
+        "accepted": 905,
+        "rejected": 4,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0.44004400440044,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.141",
+    "datetime": "2024-11-06T19:10:09.636724+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "30:F4:8F:98:E4:3A",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 0.01737,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 89,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 77,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 6120
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": 90,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 0.01737,
+          "unit": 1000000000000
+        },
+        "temp": 51,
+        "chip_temp": 43,
+        "chips": 20,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": 90,
+        "chip_temp": 61,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 80,
+    "nominal": false,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "Y8WJOP"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 9409,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 1,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.148",
+    "datetime": "2024-11-06T19:10:09.636745+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "6A:69:94:51:EE:84",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 12.827069999999999,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 93,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 5640
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": 95,
+        "chip_temp": 58,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 12.827069999999999,
+          "unit": 1000000000000
+        },
+        "temp": 89,
+        "chip_temp": 62,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": 94,
+        "chip_temp": 60,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "7K4JI3"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10391,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 94,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 224,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.162",
+    "datetime": "2024-11-06T19:10:09.636769+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "52:3a:51:36:37:42",
+    "api_ver": "3.7",
+    "fw_ver": "23.01",
+    "hostname": "miner-363742",
+    "hashrate": {
+      "rate": 0.003715847444570462,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 0,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": 0,
+    "percent_expected_wattage": 13,
+    "temperature_avg": null,
+    "env_temp": null,
+    "wattage": 217,
+    "wattage_limit": 1700,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 1800
+      },
+      {
+        "speed": 1860
+      },
+      {
+        "speed": 1920
+      },
+      {
+        "speed": 1860
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": null,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": null
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": false,
+    "uptime": 10601,
+    "efficiency": 58399,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 2,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.171",
+    "datetime": "2024-11-06T19:10:09.636791+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "50:BF:1E:0D:E4:17",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 14.69769,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 89,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 14.69769,
+          "unit": 1000000000000
+        },
+        "temp": 86,
+        "chip_temp": 57,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 90,
+        "chip_temp": 56,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": 91,
+        "chip_temp": 55,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "7DD1XN"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 8997,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 103,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 255,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.172",
+    "datetime": "2024-11-06T19:10:09.636813+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "S19",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "S19",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "D6:C9:B4:F4:02:50",
+    "api_ver": "3.7",
+    "fw_ver": "24.09",
+    "hostname": "Antminer",
+    "hashrate": {
+      "rate": 0,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 95,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 228,
+    "expected_fans": 4,
+    "percent_expected_chips": null,
+    "percent_expected_hashrate": 0,
+    "percent_expected_wattage": null,
+    "temperature_avg": 38,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 1680
+      },
+      {
+        "speed": 1800
+      },
+      {
+        "speed": 1020
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": null,
+        "temp": 38.5,
+        "chip_temp": 53.5,
+        "chips": null,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 38.5,
+        "chip_temp": 53.5,
+        "chips": null,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": 38.5,
+        "chip_temp": 53.5,
+        "chips": null,
+        "expected_chips": 76,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": null,
+    "nominal": null,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": 1,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": false,
+    "errors": [
+      {
+        "error_message": "Slot 0 tuner not running",
+        "error_code": 0
+      }
+    ],
+    "is_mining": false,
+    "uptime": 9079,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": "stratum+tcp://mine.ocean.xyz:3334",
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.199",
+    "datetime": "2024-11-06T19:10:09.636837+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "BOS+",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "BOS+",
+    "algo": "SHA256",
+    "mac": "12:00:38:21:a9:f7",
+    "api_ver": "3.7",
+    "fw_ver": "23.01",
+    "hostname": "miner-21a9f7",
+    "hashrate": {
+      "rate": 40.297279140463715,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": {
+      "rate": 39.78,
+      "unit": 1000000000000
+    },
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 100,
+    "percent_expected_hashrate": 101,
+    "percent_expected_wattage": 100,
+    "temperature_avg": 54,
+    "env_temp": null,
+    "wattage": 1799,
+    "wattage_limit": 1800,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 6060
+      },
+      {
+        "speed": 6000
+      },
+      {
+        "speed": 5820
+      },
+      {
+        "speed": 5820
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.149914008114777,
+          "unit": 1000000000000
+        },
+        "temp": 54,
+        "chip_temp": 83,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": {
+          "rate": 13.371826126260324,
+          "unit": 1000000000000
+        },
+        "temp": 54,
+        "chip_temp": 84,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": {
+          "rate": 13.775539006088616,
+          "unit": 1000000000000
+        },
+        "temp": 55,
+        "chip_temp": 85,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 90,
+    "nominal": true,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              }
+            ],
+            "quota": null,
+            "name": "Default"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": null
+    },
+    "fault_light": false,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 10601,
+    "efficiency": 45,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 351,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  },
+  {
+    "ip": "10.66.10.208",
+    "datetime": "2024-11-06T19:10:09.636861+00:00",
+    "timestamp": 1730920209,
+    "device_info": {
+      "make": "AntMiner",
+      "model": "T17",
+      "firmware": "Stock",
+      "algo": "SHA256"
+    },
+    "make": "AntMiner",
+    "model": "T17",
+    "firmware": "Stock",
+    "algo": "SHA256",
+    "mac": "DE:9B:BE:A1:5C:DA",
+    "api_ver": "3.7",
+    "fw_ver": "4.11.1",
+    "hostname": null,
+    "hashrate": {
+      "rate": 13.87967,
+      "unit": 1000000000000
+    },
+    "expected_hashrate": null,
+    "expected_hashboards": 3,
+    "expected_chips": 90,
+    "expected_fans": 4,
+    "percent_expected_chips": 50,
+    "percent_expected_hashrate": null,
+    "percent_expected_wattage": null,
+    "temperature_avg": 90,
+    "env_temp": null,
+    "wattage": null,
+    "wattage_limit": null,
+    "voltage": null,
+    "fans": [
+      {
+        "speed": 5880
+      },
+      {
+        "speed": 5760
+      },
+      {
+        "speed": 0
+      },
+      {
+        "speed": 0
+      }
+    ],
+    "fan_psu": null,
+    "hashboards": [
+      {
+        "slot": 0,
+        "hashrate": {
+          "rate": 13.87967,
+          "unit": 1000000000000
+        },
+        "temp": 88,
+        "chip_temp": 52,
+        "chips": 30,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 1,
+        "hashrate": null,
+        "temp": 93,
+        "chip_temp": 56,
+        "chips": null,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": true,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      },
+      {
+        "slot": 2,
+        "hashrate": null,
+        "temp": null,
+        "chip_temp": null,
+        "chips": 15,
+        "expected_chips": 30,
+        "serial_number": null,
+        "missing": false,
+        "tuned": null,
+        "active": null,
+        "voltage": null
+      }
+    ],
+    "total_chips": 45,
+    "nominal": false,
+    "config": {
+      "pools": {
+        "groups": [
+          {
+            "pools": [
+              {
+                "url": "stratum+tcp://mine.ocean.xyz:3334",
+                "user": "",
+                "password": "x"
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              },
+              {
+                "url": "",
+                "user": "",
+                "password": ""
+              }
+            ],
+            "quota": 1,
+            "name": "PA5EB3"
+          }
+        ]
+      },
+      "fan_mode": {
+        "mode": "normal",
+        "minimum_fans": 1,
+        "minimum_speed": 0
+      },
+      "temperature": {
+        "target": null,
+        "hot": null,
+        "danger": null
+      },
+      "mining_mode": {
+        "mode": "normal"
+      }
+    },
+    "fault_light": null,
+    "errors": [],
+    "is_mining": true,
+    "uptime": 9053,
+    "efficiency": null,
+    "pools": [
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": "mine.ocean.xyz",
+          "port": 3334,
+          "pubkey": null
+        },
+        "accepted": 147,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 0,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 1,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": null,
+        "accepted": 0,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": false,
+        "alive": false,
+        "index": 2,
+        "user": "",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      },
+      {
+        "url": {
+          "scheme": "stratum+tcp",
+          "host": null,
+          "port": null,
+          "pubkey": null
+        },
+        "accepted": 355,
+        "rejected": 0,
+        "get_failures": 0,
+        "remote_failures": 0,
+        "active": true,
+        "alive": true,
+        "index": 3,
+        "user": "DevFee",
+        "pool_rejected_percent": 0,
+        "pool_stale_percent": 0
+      }
+    ]
+  }
+]
