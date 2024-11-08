@@ -11,32 +11,24 @@ from pyasic import get_miner
 import os
 from pyasic import settings
 import yaml
-import subprocess
-import time
 
 # Load subnets from environment variable
 SUBNETS = os.getenv('SCAN_SUBNETS', '10.66.10.0/24').split(',')
 SCAN_INTERVAL = int(os.getenv('SCAN_INTERVAL', '300'))  # 5 minutes default
-
+REDIS_URL = os.getenv('REDIS_URL', 'redis://redis:6379')  # 5 minutes default
     
 class RedisCache:
-    def __init__(self, redis_url: str = "redis://localhost"):
+    def __init__(self, redis_url: str = REDIS_URL):
         self.redis = aioredis.from_url(redis_url, decode_responses=True)
         
     async def set_miners_data(self, subnet: str, miners_data: List[Dict]):
         # Store miners data with subnet as key, expire after 5 minutes
-        await self.redis.set(f"miners:{subnet}", miners_data, ex=SCAN_INTERVAL)
+        await self.redis.set(f"miners:{subnet}", json.dumps(miners_data), ex=SCAN_INTERVAL)
         
     async def get_miners_data(self, subnet: str):
         data = await self.redis.get(f"miners:{subnet}")
         return json.loads(data) if data else None
     
-def start_redis_server():
-    # Start Redis server in the background
-    redis_process = subprocess.Popen(['redis-server'])
-    # Give Redis a moment to start up
-    time.sleep(1)
-    return redis_process
 
 def load_settings():
     # Define settings mapping
@@ -85,7 +77,6 @@ def load_settings():
             # Update pyasic setting
             settings.update(setting_key, value)
 
-redis_process = start_redis_server()
 
 ## Initialize cache and background tasks set
 cache = RedisCache()
@@ -102,7 +93,8 @@ async def lifespan(app: FastAPI):
                     network = MinerNetwork.from_subnet(subnet)
                     miners = await network.scan()
                     miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
-                    await cache.set_miners_data(subnet, [data.as_json() for data in miner_data])
+                    data = [data.as_dict() for data in miner_data]
+                    await cache.set_miners_data(subnet, data)
                     print(f"Completed scan of subnet {subnet}")
             except Exception as e:
                 print(f"Error during periodic scan: {str(e)}")
@@ -140,26 +132,45 @@ cache = RedisCache()
 #     # Convert each MinerData instance to dict for JSON response
 #     return [data.as_dict() for data in miner_data]
 
+# example miner data:
+# {
+#   "ip": "10.66.10.53",
+#   "datetime": "2024-11-08T22:10:47.596261+00:00",
+#   "timestamp": 1731103847,
+#   "device_info": {
+#     "make": "AntMiner",
+#     "model": "T17",
+#     "firmware": "BOS+",
+#     "algo": "SHA256"
+#   },
+#   "make": "AntMiner",
+#   "model": "T17",
+#   "firmware": "BOS+",
+#   "algo": "SHA256",
+#   "mac": "86:81:1c:54:d0:78",
+#   "api_ver": "3.7",
+#   "fw_ver": "23.01",
+#   "hostname": "miner-54d078",
+#   "hashrate": {
+#     "rate": 38.084689987685664,
+#     "unit": 1000000000000
+#   },
+
 @app.get("/miners")
 async def get_miners(subnet: str = "10.66.10.0/24"):
-    # scan network and cache results
-    network = MinerNetwork.from_subnet(subnet)
-    miners = await network.scan()
-    miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
-    data = [data.as_json() for data in miner_data]
-    
-    # Store in cache
-    await cache.set_miners_data(subnet, data)
-    return data
-
-@app.get("/cache/miners")
-async def get_miners(subnet: str = "10.66.10.0/24"):
-    # Try to get from cache first
+     # Try to get from cache first
     cached_data = await cache.get_miners_data(subnet)
     if cached_data:
         return cached_data
+    
     # If not in cache, scan network and cache results
-    return get_miners(subnet)
+    network = MinerNetwork.from_subnet(subnet)
+    miners = await network.scan()
+    miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
+    data = [data.as_dict() for data in miner_data]
+    await cache.set_miners_data(subnet, data)
+    
+    return data
 
 @app.get("/miner/{ip}")
 async def get_single_miner(ip: str):
@@ -268,8 +279,3 @@ async def set_miner_power_limit(ip: str, limit: int):
 if __name__ == "__main__":
     load_settings()
     uvicorn.run(app, host="0.0.0.0", port=9000)
-    # try:
-    #     uvicorn.run(app, host="0.0.0.0", port=9000)
-    # finally:
-    #     # Clean up Redis server on shutdown
-    #     redis_process.terminate()
