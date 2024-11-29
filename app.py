@@ -1,23 +1,14 @@
 import uvicorn
 from fastapi import FastAPI
-import json
-from typing import List, Dict
 import asyncio
-from contextlib import asynccontextmanager
-from asyncio import create_task, Task
 from pyasic.network import MinerNetwork
 from pyasic import get_miner
 import os
 from pyasic import settings
 import yaml
 
-# Load subnets from environment variable
-SUBNETS = os.getenv('SCAN_SUBNETS', '10.66.10.0/24').split(',')
-SCAN_INTERVAL = int(os.getenv('SCAN_INTERVAL', '300'))  # 5 minutes default
-
 def load_settings():
     # Define settings mapping
-    SUBNETS = os.getenv('SCAN_SUBNETS', '10.66.10.0/24').split(',')
     settings_map = {
         "NETWORK_PING_RETRIES": ("network_ping_retries", int, 1),
         "NETWORK_PING_TIMEOUT": ("network_ping_timeout", int, 3),
