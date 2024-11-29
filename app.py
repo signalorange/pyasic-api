@@ -1,6 +1,5 @@
 import uvicorn
 from fastapi import FastAPI
-from redis import asyncio as aioredis
 import json
 from typing import List, Dict
 import asyncio
@@ -15,20 +14,6 @@ import yaml
 # Load subnets from environment variable
 SUBNETS = os.getenv('SCAN_SUBNETS', '10.66.10.0/24').split(',')
 SCAN_INTERVAL = int(os.getenv('SCAN_INTERVAL', '300'))  # 5 minutes default
-REDIS_URL = os.getenv('REDIS_URL', 'redis://redis:6379')  # 5 minutes default
-    
-class RedisCache:
-    def __init__(self, redis_url: str = REDIS_URL):
-        self.redis = aioredis.from_url(redis_url, decode_responses=True)
-        
-    async def set_miners_data(self, subnet: str, miners_data: List[Dict]):
-        # Store miners data with subnet as key, expire after 5 minutes
-        await self.redis.set(f"miners:{subnet}", json.dumps(miners_data), ex=SCAN_INTERVAL)
-        
-    async def get_miners_data(self, subnet: str):
-        data = await self.redis.get(f"miners:{subnet}")
-        return json.loads(data) if data else None
-    
 
 def load_settings():
     # Define settings mapping
@@ -77,60 +62,21 @@ def load_settings():
             # Update pyasic setting
             settings.update(setting_key, value)
 
+app = FastAPI()
 
-## Initialize cache and background tasks set
-cache = RedisCache()
-background_tasks: set[Task] = set()
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup: Create periodic scan task
-    async def periodic_scan_task():
-        while True:
-            try:
-                for subnet in SUBNETS:
-                    subnet = subnet.strip()
-                    network = MinerNetwork.from_subnet(subnet)
-                    miners = await network.scan()
-                    miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
-                    data = [data.as_dict() for data in miner_data]
-                    await cache.set_miners_data(subnet, data)
-                    print(f"Completed scan of subnet {subnet}")
-            except Exception as e:
-                print(f"Error during periodic scan: {str(e)}")
-            
-            await asyncio.sleep(SCAN_INTERVAL)
-
-    # Start the background task
-    task = create_task(periodic_scan_task())
-    background_tasks.add(task)
+@app.get("/miners")
+async def get_miners(subnet: str = "10.66.10.0/24"):
+    # Create a network scanner for the given subnet
+    network = MinerNetwork.from_subnet(subnet)
+    # Scan for miners
+    miners = await network.scan()
     
-    yield
+    # Gather all miner data concurrently
+    miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
     
-    # Shutdown: Clean up tasks
-    for task in background_tasks:
-        task.cancel()
-    await asyncio.gather(*background_tasks, return_exceptions=True)
-
-
-app = FastAPI(lifespan=lifespan)
-
-#app = FastAPI()
-# Add to existing imports
-cache = RedisCache()
-
-# @app.get("/miners")
-# async def get_miners(subnet: str = "10.66.10.0/24"):
-#     # Create a network scanner for the given subnet
-#     network = MinerNetwork.from_subnet(subnet)
-#     # Scan for miners
-#     miners = await network.scan()
-    
-#     # Gather all miner data concurrently
-#     miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
-    
-#     # Convert each MinerData instance to dict for JSON response
-#     return [data.as_dict() for data in miner_data]
+    # Convert each MinerData instance to dict for JSON response
+    return [data.as_dict() for data in miner_data]
 
 # example miner data:
 # {
@@ -155,22 +101,6 @@ cache = RedisCache()
 #     "rate": 38.084689987685664,
 #     "unit": 1000000000000
 #   },
-
-@app.get("/miners")
-async def get_miners(subnet: str = "10.66.10.0/24"):
-     # Try to get from cache first
-    cached_data = await cache.get_miners_data(subnet)
-    if cached_data:
-        return cached_data
-    
-    # If not in cache, scan network and cache results
-    network = MinerNetwork.from_subnet(subnet)
-    miners = await network.scan()
-    miner_data = await asyncio.gather(*[miner.get_data() for miner in miners])
-    data = [data.as_dict() for data in miner_data]
-    await cache.set_miners_data(subnet, data)
-    
-    return data
 
 @app.get("/miner/{ip}")
 async def get_single_miner(ip: str):

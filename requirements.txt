@@ -1,8 +1,7 @@
 fastapi
-pyasic==0.62.3
+pyasic==0.64.4
 uvicorn
 pyyaml
-redis 
 fastapi-utils
 setuptools
 jinja2

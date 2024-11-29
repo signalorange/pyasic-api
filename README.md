@@ -14,11 +14,7 @@ A RESTful API wrapper for pyasic that provides easy access to ASIC miner informa
 
 - [x] Add support for the control [endpoints](https://github.com/UpstreamData/pyasic?tab=readme-ov-file#miner-control)
 - [x] Add support for the [settings](https://github.com/UpstreamData/pyasic?tab=readme-ov-file#settings) as ENV 
-- [ ] Add a Redis cache for faster responses, is it needed?
-- [ ] Put stats in the Redis cache at every scan
-- [x] Do periodic scans for miners
 - [x] Add a list of networks to scan as ENV var
-
 
 ## API Endpoints
 
